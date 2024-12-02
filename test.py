@@ -9,7 +9,7 @@ def calculate_credit_interest(amount, annual_rate):
 class TestCreditInterestCalculation(unittest.TestCase):
 
     def test_positive_case(self):
-        self.assertAlmostEqual(calculate_credit_interest(10000, 12), 1200)
+        self.assertAlmostEqual(calculate_credit_interest(10000, 2), 1200)
         self.assertAlmostEqual(calculate_credit_interest(5000, 5), 250)
 
     def test_zero_amount(self):
